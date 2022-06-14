@@ -1,0 +1,22 @@
+*swp
+
+# is downloadable from https://pragprog.com/titles/rwscala/modern-systems-programming-with-scala-native/
+scala_native/book/*
+
+# data
+*csv
+*html
+ml_chollet/imagesPlayground/*
+
+# scala
+*hnir
+*class
+*cache
+**/out/*
+**/target/*
+**/mill
+**/.bsp/*
+
+# python & jupyter
+**/.ipynb_checkpoints/*
+**/__pycache__/*
