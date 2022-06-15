@@ -36,5 +36,12 @@ def f2(x):
 
 
 def f3(x):
-    """Rosenbrok function, 100(x_2 - x_1^2)^2 + (1-x_1)^2."""
+    """Rosenbrok function, 100(x_2 - x_1^2)^2 + (1-x_1)^2.
+    https://en.wikipedia.org/wiki/Rosenbrock_function"""
     return 100 * jp.power(x[1] - jp.power(x[0], 2), 2) + jp.power(1 - x[0], 2)
+
+
+def f4(x):
+    """Himmelblau function, (x₁² + x₂ - 11)² + (x₁ + x₂² - 7)²
+    https://en.wikipedia.org/wiki/Himmelblau%27s_function"""
+    return jp.power(jp.power(x[0], 2) + x[1] - 11, 2) + jp.power(x[0] + jp.power(x[1], 2) - 7, 2)
